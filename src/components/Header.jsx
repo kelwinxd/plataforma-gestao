@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
+import Logo from '../imgs/Logo.svg'
 
 const Header = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="bg-gray-800 text-white flex justify-between items-center p-4 relative">
-      <h1 className="text-2xl font-bold">Vegas</h1>
+      <img src={Logo} alt="" />
 
       {/* Botão hambúrguer */}
       <button className="sm:hidden text-2xl" onClick={() => setDrawerOpen(true)}>
